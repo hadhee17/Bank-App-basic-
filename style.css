@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.welcome {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.logo {
+  background-color: grey;
+  background: none;
+}
+
+.login-input {
+  border-radius: 10rem;
+
+  border: 1px solid #fff;
+  padding: 0.5rem 0.5rem;
+}
+
+.login-button {
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.app {
+  position: relative;
+  max-width: 1000px;
+  margin: 4rem auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.balance {
+  display: flex;
+  grid-column: 1 / span 2;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.total-balance {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.balance-current {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: -0.2rem;
+}
+
+.movements {
+  grid-row: 2 / span 3;
+  background-color: #fff;
+  overflow: scroll;
+}
+
+.movement-row {
+  display: flex;
+  padding: 2.25rem 4rem;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.movement-type-deposit {
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+  background-color: green;
+}
+
+.movement-type-withdrawal {
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+  background-color: red;
+}
+
+.movement-amount {
+  font-size: 1.7rem;
+  margin-left: auto;
+}
+
+.summary {
+  grid-row: 5/6;
+  display: flex;
+  /* align-items: baseline; */
+  margin-top: 1rem;
+}
+
+.summary-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  margin-right: 0.8rem;
+}
+
+.value-in,
+.value-out,
+.value-interest {
+  font-size: 2.2rem;
+  margin-right: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+
+.form-label {
+  grid-row: 2;
+}
+
+.transfer-input {
+  border-radius: 10rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 0.5rem;
+}
+
+.loan-input {
+  border-radius: 10rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 0.5rem;
+}
+
+.close-input {
+  border-radius: 10rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 0.5rem;
+}
+
+.operation-loan {
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.operation-transfer {
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.operation-close {
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
